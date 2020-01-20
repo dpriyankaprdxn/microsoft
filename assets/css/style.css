@@ -100,14 +100,68 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 75%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
 
+header .wrapper { 
+  width: 90%;
+  padding: 12px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
 
+.dropdown-menu { 
+  padding: 10px 20%;
+  display: none; 
+  position: absolute;
+  top:20px;
+  background-color: #fff; 
+  text-align: center;
+}
+
+.subheader .dropdown-menu { background-color: #3361b6;  }
+
+.dropdown-menu li{ margin: 5px 1%; }
+
+nav li, .subheader li{  margin-left: 5%; }
+
+.menuOne, .menuTwo { width: 76%; }
+
+.hamburgerOne { display: none; }
+
+header + header { background-color: #3361b6; }
+
+nav a { color: #666; }
+
+.subheader a { color: #fff; }
+
+.icons { 
+  position: absolute;
+  top:18px;
+  right: 0;
+}
+
+.icons .Search {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.icons a { color: #ccc; }
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown a:hover +  .dropdown-menu{
+  display: block;
+}
 
 
 
