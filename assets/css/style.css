@@ -198,6 +198,21 @@ p {
  color: #636164; 
  line-height: 22px;
 }
+
+.Resources ul,
+.contact-info .wrapper,
+.products ul{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-info-one {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*banner styling start*/
 
 .banner { 
@@ -319,13 +334,7 @@ p {
   border-bottom: 1px solid #ccc;
 }
 
-.products ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction:column;
-  margin-bottom: 74px;
-}
+.products ul { margin-bottom: 74px; }
 
 .products li { 
   padding-bottom: 30px;
@@ -365,13 +374,7 @@ p {
   color: #666;
 }
 
-.Resources ul {
-  margin-top: 24px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  flex-direction: column;
-}
+.Resources ul { margin-top: 24px; }
 
 .Resources li { 
   padding: 24px 0;
@@ -405,6 +408,26 @@ p {
   text-transform: capitalize;
 }
 /*Resources section styling end*/
+/*contact-info section styling start*/
+
+.contact-info {
+  padding-top: 62px;
+  background: linear-gradient(to right, #3972d6 50%, #152250 50%);
+}
+
+.contact-info-one li { 
+  width: 50%;
+  display: block;
+}
+
+.contact-info-one .fa { margin-right: 2%; }
+
+.contact-info-one a {
+  display: block;
+  color: #fff;
+}
+/*contact-info section styling end*/
+
 /*=================================
   main styling ends here
 =================================*/
