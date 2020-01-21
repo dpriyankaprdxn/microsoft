@@ -179,7 +179,10 @@ nav a { color: #666; }
 
 /*banner styling start*/
 
-.banner { background: linear-gradient(to right, #26348c , #883a48); }
+.banner { 
+  padding-bottom: 80px;
+  background: linear-gradient(to right, #26348c , #883a48);
+}
 
 .banner .wrapper { 
   width: 100%;
@@ -214,6 +217,22 @@ nav a { color: #666; }
 .banner .wrapper + span {
   position: absolute;
 }
+
+.bannerspan { 
+  padding: 4px 1%;
+  position: absolute;
+  top: 13px;
+  left: 5%;
+  background: #f5f4fa;
+  color: #666;
+  font-size: 14px;
+}
+
+ .digital-business{
+  position: absolute;
+  top: 106px;
+  left: 13%;
+ }
 
 /*banner styling end*/
 
