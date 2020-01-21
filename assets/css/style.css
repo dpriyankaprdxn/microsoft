@@ -122,7 +122,8 @@ header .wrapper, footer .wrapper { width: 90%; }
   padding: 10px 20%;
   display: none; 
   position: absolute;
-  top:20px;
+  top: 18px;
+  left:-18%;
   z-index: 1;
   background-color: #fff; 
   text-align: center;
@@ -137,7 +138,7 @@ header .wrapper, footer .wrapper { width: 90%; }
 
 nav li, .subheader li{  margin-left: 5%; }
 
-.menuOne, .menuTwo { width: 76%; }
+.menuOne, .menuTwo { width: 85%; }
 
 .hamburgerOne { display: none; }
 
@@ -165,7 +166,7 @@ nav a { color: #666; }
   position: relative;
 }
 
-.dropdown a:hover +  .dropdown-menu{
+.dropdown:hover  .dropdown-menu{
   display: block;
 }
 
@@ -210,7 +211,12 @@ p {
   flex-direction: column;
 }
 
-.contact-info-one, .socials, .footerTop {
+.contact-info-one,
+.socials,
+.footerTop , 
+.footerBottom,
+.products li 
+{
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -219,6 +225,7 @@ p {
 
 .banner { 
   padding-bottom: 496px;
+  position: relative;
   background: linear-gradient(to right, #26348c , #26348c , #46446e , #883a48);
   color: #fff;
 }
@@ -228,7 +235,7 @@ p {
   position: relative;
 }
 
-.banner .wrapper + span{ position: absolute; }
+.banner .wrapper + span { position: absolute; }
 
 .contact {
   width: 24%;
@@ -244,6 +251,7 @@ p {
 .contact li:first-child:before {
   content: '\f095';
   color: #fff;
+    font-family: FontAwesome;
 }
 
 .contact li:last-child:before {
@@ -342,7 +350,6 @@ p {
   padding-bottom: 30px;
   margin-bottom: 24px;
   border-bottom: 1px solid #ccc;
-  display: flex;
   justify-content: space-between;
 }
 
@@ -415,7 +422,9 @@ p {
 
 .contact-info .wrapper{ padding: 62px 0 73px; }
 
-.contact-info{ background: linear-gradient(to right, #3972d6 50%, #152250 50%); }
+.contact-info{ 
+  background: linear-gradient(to right, #3972d6 50%, #152250 50%); 
+}
 
 .contact-info-one li { 
   width: 50%;
@@ -490,15 +499,21 @@ footer h5 {
   color: #666;
 }
 
-footer a, .footernav li:first-child, .footernav li:last-child { 
+footer a, .footerBottom p, .footernav li:last-child { 
   color:#666;
   font-size: 11px;
 }
 
-.footerBottom { margin-bottom: 20px }
+.footerBottom { 
+  justify-content: space-between;
+  margin-bottom: 20px
+}
 
 .fa-globe { font-size: 18px; }
 
+.footernav { width: 54%; }
+
+.footernav li { margin-left: 2%; }
  /*=================================
   footer styling ends here
 =================================*/ 
@@ -532,11 +547,18 @@ footer a, .footernav li:first-child, .footernav li:last-child {
     background-color: #fff;
   }
 
+  footer a:hover { color: #333; }
+
+  }
+
+/*media query for 995px starts here*/
+@media only screen and (max-width: 1024px) {
+  .Resources ul + a {
+    width: 19%;
   }
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
-
 
 
 }  
