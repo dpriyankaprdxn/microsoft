@@ -177,6 +177,45 @@ nav a { color: #666; }
   main styling starts here
 =================================*/
 
+/*banner styling start*/
+
+.banner { background: linear-gradient(to right, #26348c , #883a48); }
+
+.banner .wrapper { 
+  width: 100%;
+  position: relative;
+}
+
+.banner .wrapper + span{ position: absolute; }
+
+.contact {
+  width: 24%;
+  padding: 13px 2%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #020001;
+}
+
+.contact li:first-child { margin-right: 6%; }
+
+.contact li:first-child:before {
+  content: '\f095';
+  color: #fff;
+}
+
+.contact li:last-child:before {
+  content: '\f003';
+  color: #fff;
+  }
+
+.contact a { color: #fff; }
+
+.banner .wrapper + span {
+  position: absolute;
+}
+
+/*banner styling end*/
 
 
 
@@ -205,10 +244,15 @@ nav a { color: #666; }
 /*media query starts*/
 
 /*media query for remove hover below 1024px*/
-@media only screen and (max-width: 1024px){
+@media only screen and (min-width: 1024px){
 
   nav a:hover { color: #3361b6; }
-}
+
+  .subheader a:hover { color: #ccc;  }
+
+  .icons a:hover, .contact a:hover { color: #666; }
+
+  }
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
