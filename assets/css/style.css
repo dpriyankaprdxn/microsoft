@@ -110,7 +110,7 @@ li {
 header .wrapper { width: 90%; }
 
 .mainHedaer, .subheader {
-  padding: 12px 0;
+  padding: 10px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,6 +118,7 @@ header .wrapper { width: 90%; }
 }
 
 .dropdown-menu { 
+  width: 100%;
   padding: 10px 20%;
   display: none; 
   position: absolute;
@@ -129,7 +130,10 @@ header .wrapper { width: 90%; }
 
 .subheader .dropdown-menu { background-color: #3361b6;  }
 
-.dropdown-menu li{ margin: 5px 1%; }
+.dropdown-menu li { 
+  margin: 5px 1%; 
+  display: block;
+}
 
 nav li, .subheader li{  margin-left: 5%; }
 
@@ -137,7 +141,7 @@ nav li, .subheader li{  margin-left: 5%; }
 
 .hamburgerOne { display: none; }
 
-.subheader { background-color: #3361b6; }
+.subheader-section { background-color: #3361b6; }
 
 nav a { color: #666; }
 
@@ -164,9 +168,6 @@ nav a { color: #666; }
 .dropdown a:hover +  .dropdown-menu{
   display: block;
 }
-
-
-
 
 /*=================================
   Header styling ends here
@@ -202,6 +203,13 @@ nav a { color: #666; }
 =================================*/ 
 
 /*media query starts*/
+
+/*media query for remove hover below 1024px*/
+@media only screen and (max-width: 1024px){
+
+  nav a:hover { color: #3361b6; }
+}
+
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
 
