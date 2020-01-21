@@ -107,8 +107,9 @@ li {
   Header styling starts here
 =================================*/
 
-header .wrapper { 
-  width: 90%;
+header .wrapper { width: 90%; }
+
+.mainHedaer, .subheader {
   padding: 12px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -121,6 +122,7 @@ header .wrapper {
   display: none; 
   position: absolute;
   top:20px;
+  z-index: 1;
   background-color: #fff; 
   text-align: center;
 }
@@ -135,7 +137,7 @@ nav li, .subheader li{  margin-left: 5%; }
 
 .hamburgerOne { display: none; }
 
-header + header { background-color: #3361b6; }
+.subheader { background-color: #3361b6; }
 
 nav a { color: #666; }
 
