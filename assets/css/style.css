@@ -287,6 +287,8 @@ p {
 }
 
 .digitalTransformation ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;  
   justify-content: space-between;
 }
@@ -318,6 +320,8 @@ p {
 }
 
 .products ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   flex-direction:column;
   margin-bottom: 74px;
@@ -339,17 +343,68 @@ p {
 
 .products figure:last-of-type  { width:30%; }
 
-.products figure:last-of-type img { max-width: 290px; }
+.products figure:last-of-type img, .Resources img  { max-width: 290px; }
 
 .products li p { width: 85%; }
 
-.products a { 
+.products a , .Resources a{ 
   margin-top: 18px;
   color: #7e91ad;
 }
+/*product section styling end*/
+/*Resources section styling start*/
 
+.Resources { 
+  padding: 73px 0;
+  background-color: #f1f2f6;
+}
 
-/*product section end*/
+.fa-book { 
+  border-bottom: 1px solid #ccc;
+  display: block;
+  color: #666;
+}
+
+.Resources ul {
+  margin-top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+}
+
+.Resources li { 
+  padding: 24px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.Resources li div , .Resources figure { display: inline-block; }
+
+.Resources li div { width: 68%; }
+
+.Resources figure { 
+  width: 30%; 
+  float: right;
+}
+
+.Resources span { 
+  margin-bottom: 18px;
+  display: block;
+  color: #636164;
+ }
+
+.Resources p , .Resources h4{ width: 70%; }
+
+.Resources ul + a { 
+  width: 15%;
+  padding: 12px 2%;
+  margin: 74px auto 0;
+  display: block;
+  background: #3062b9; 
+  color: #fff;
+  text-transform: capitalize;
+}
+/*Resources section styling end*/
 /*=================================
   main styling ends here
 =================================*/
@@ -373,7 +428,10 @@ p {
 /*media query for remove hover below 1024px*/
 @media only screen and (min-width: 1024px){
 
-  nav a:hover { color: #3361b6; }
+  nav a:hover, 
+  .products a:hover,
+  .digitalTransformation a:hover, 
+  .Resources a:hover { color: #3361b6; }
 
   .subheader a:hover { color: #ccc;  }
 
@@ -384,7 +442,6 @@ p {
     background-color: #fff;
     color: #26348c;
   }
-
   }
 
 /*media query for 995px starts here*/
