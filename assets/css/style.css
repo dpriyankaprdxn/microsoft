@@ -177,11 +177,25 @@ nav a { color: #666; }
   main styling starts here
 =================================*/
 
+h2 { 
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+h3 { 
+  margin-bottom: 18px;
+  font-size: 32px;
+}
+
+h3 { color: #666; }
+
+p { color: #636164; }
 /*banner styling start*/
 
 .banner { 
-  padding-bottom: 80px;
-  background: linear-gradient(to right, #26348c , #883a48);
+  padding-bottom: 496px;
+  background: linear-gradient(to right, #26348c , #26348c , #46446e , #883a48);
+  color: #fff;
 }
 
 .banner .wrapper { 
@@ -229,19 +243,68 @@ nav a { color: #666; }
 }
 
  .digital-business{
+  width: 50%;
   position: absolute;
   top: 106px;
   left: 13%;
  }
 
+.digital-business p { 
+  margin-bottom :24px;
+  font-size: 18px; 
+  color: #ccc;
+}
+
+.digital-business a {
+  width: 25%;
+  padding: 7px 0;
+  margin-top: 24px;
+  border: 3px solid #fff;
+  display: block;
+  color: #fff;
+  text-align: center;
+}
+
+.digital-business span:only-child {
+  font-size: 48px;
+}
 /*banner styling end*/
 
+/*digitalTransformation styling start*/
 
+.digitalTransformation { 
+  padding: 84px 0 81px;
+  margin-bottom: 83px;
+  background-color: #f1f2f6; 
+}
 
+.digitalTransformation ul {
+  display: flex;  
+  justify-content: space-between;
+}
 
+.digitalTransformation img { max-width: 385px; }
 
+.digitalTransformation li:first-child { width: 60%; }
 
+.digitalTransformation li:last-child { width: 40% }
 
+.digitalTransformation  p { 
+  width: 82%;
+  margin-bottom: 25px;
+  line-height: 22px;
+}
+
+.digitalTransformation a {
+  width: 90%;
+  line-height: 22px;
+  color: #7e91ad;
+}
+
+/*digitalTransformation styling end*/
+/*producys section start*/
+
+/*product section end*/
 /*=================================
   main styling ends here
 =================================*/
@@ -270,6 +333,12 @@ nav a { color: #666; }
   .subheader a:hover { color: #ccc;  }
 
   .icons a:hover, .contact a:hover { color: #666; }
+
+  .digital-business a:hover {
+    border: 3px solid #ccc;
+    background-color: #fff;
+    color: #26348c;
+  }
 
   }
 
