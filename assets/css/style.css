@@ -215,7 +215,8 @@ p {
 .socials,
 .footerTop , 
 .footerBottom,
-.products li 
+.products li,
+.allBlog
 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -238,7 +239,7 @@ p {
 .banner .wrapper + span { position: absolute; }
 
 .contact {
-  width: 24%;
+  width: 25%;
   padding: 13px 2%;
   position: absolute;
   top: 0;
@@ -249,12 +250,14 @@ p {
 .contact li:first-child { margin-right: 6%; }
 
 .contact li:first-child:before {
-  content: '\f095';
+  font-family: FontAwesome;
+  content: "\f095";
   color: #fff;
-    font-family: FontAwesome;
+  
 }
 
 .contact li:last-child:before {
+  font-family: FontAwesome;
   content: '\f003';
   color: #fff;
   }
@@ -288,19 +291,23 @@ p {
   color: #ccc;
 }
 
+.digital-business span { display: block; }
+
 .digital-business a {
-  width: 25%;
-  padding: 7px 0;
+  padding: 7px 4%;
   margin-top: 24px;
   border: 3px solid #fff;
-  display: block;
   color: #fff;
   text-align: center;
 }
 
-.digital-business span:only-child {
+.digital-business a:before {
+  content: "\f144";
+  font-family: FontAwesome;
+  color: #fff;
   font-size: 48px;
 }
+
 /*banner styling end*/
 
 /*digitalTransformation styling start*/
@@ -407,12 +414,10 @@ p {
 
 .Resources p , .Resources h4{ width: 70%; }
 
-.Resources ul + a { 
-  width: 15%;
+.allBlog a { 
   padding: 12px 2%;
   border:1px solid transparent;
   margin: 74px auto 0;
-  display: block;
   background: #3062b9; 
   color: #fff;
   text-transform: capitalize;
@@ -541,13 +546,18 @@ footer a, .footerBottom p, .footernav li:last-child {
     color: #26348c;
   }
 
-  .Resources ul + a:hover { 
+  .allBlog a:hover { 
     border:1px solid #3062b9;
     color: #3062b9;
     background-color: #fff;
   }
 
   footer a:hover { color: #333; }
+
+  .digital-business a:hover:before {
+    background-color: #fff;
+    color: #26348c;
+  }
 
   }
 
@@ -559,6 +569,44 @@ footer a, .footerBottom p, .footernav li:last-child {
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+  .contact { width: 35%; }
 
+  .digital-business a { width: 35%; }
+
+  .Resources p, .Resources h4 { width: 85%; }
+
+  .footerTop { flex-wrap: wrap; } 
+
+  .footerTop div {
+    width: 30%;
+    margin-bottom: 18px;
+  }  
+
+  .footernav { width: 60%; }
 
 }  
+
+/*media query for 767px starts here*/
+@media only screen and (max-width: 767px) {
+
+  .contact { width: 41%; }
+
+  .wrapper { width:85%; }
+
+  .digitalTransformation ul { flex-direction: column; }
+
+  .digitalTransformation li:first-child { 
+    width:100%;
+    margin-bottom: 10px;
+  }
+
+  .digitalTransformation li:last-child { 
+    width: auto;
+    margin: 0 auto;
+  }
+
+  .digitalTransformation p { width: 90%; }
+
+  .digitalTransformation a { width: 100%; }
+
+}
