@@ -415,7 +415,7 @@ p {
 .Resources p , .Resources h4{ width: 70%; }
 
 .allBlog a { 
-  padding: 12px 2%;
+  padding: 14px 2%;
   border:1px solid transparent;
   margin: 74px auto 0;
   background: #3062b9; 
@@ -480,7 +480,7 @@ p {
 =================================*/ 
 
 footer { 
-  padding-top: 40px;
+  padding: 40px 0 20px;
   background-color: #f5f0f6;
 }
 
@@ -509,10 +509,7 @@ footer a, .footerBottom p, .footernav li:last-child {
   font-size: 11px;
 }
 
-.footerBottom { 
-  justify-content: space-between;
-  margin-bottom: 20px
-}
+.footerBottom { justify-content: space-between; }
 
 .fa-globe { font-size: 18px; }
 
@@ -533,10 +530,11 @@ footer a, .footerBottom p, .footernav li:last-child {
   .digitalTransformation a:hover, 
   .Resources a:hover { color: #3361b6; }
 
-  .subheader a:hover,
-  .contact-info a:hover{ color: #ccc;  }
+  .contact-info-one li:first-child a:hover{ color: #152250;  }
 
-  .socials .fa:hover { color:#ccc; }
+  .contact-info-one li:last-child a:hover{ color: #3972d6;  }
+
+  .subheader a:hover, .socials .fa:hover { color:#ccc; }
 
   .icons a:hover, .contact a:hover { color: #666; }
 
@@ -569,6 +567,63 @@ footer a, .footerBottom p, .footernav li:last-child {
 
 /*media query for 995px starts here*/
 @media only screen and (max-width: 995px) {
+
+  .menuOne, .menuTwo { position: relative; }
+
+  .hamburgerOne , .hamburgertwo{
+    width: 4%;
+    padding: 2px 1%;
+    border:1px solid #fff;
+    display: block;
+    float: right;
+  }
+  
+  .hamburgerOne { background:  #3361b6;  }
+
+  .hamburgerOne span, .hamburgertwo span { 
+    padding: 2px 1%;
+    margin: 4px 1%;
+    display: block;
+    background: #fff;
+  }
+  
+  .hamburgertwo {
+    background: #fff;
+  }
+  
+  .hamburgertwo span {
+    background-color: #3361b6;
+  }
+
+  nav li , .subheader li {
+    margin-bottom: 10px;
+    display: block;
+    text-align: center;
+  }
+
+  nav { 
+    width: 100%;
+    margin: 0 auto;
+    display: none; 
+    position: absolute; 
+    top: 44px;
+    background: #fff;
+    z-index: 11;  
+  }
+  
+  .hamburgertwo + ul { 
+    width: 100%;
+    display: none; 
+    position: absolute;
+    top: 38px;
+    z-index: 1;
+    background-color: #3361b6;
+  }
+
+  .hamburgerOne:hover + nav, .hamburgertwo:hover + .subheader{ display: block;  }
+
+  .icons { right: 65px; }
+
   .contact { width: 35%; }
 
   .digital-business a { width: 35%; }
@@ -593,7 +648,9 @@ footer a, .footerBottom p, .footernav li:last-child {
 
   .wrapper { width:85%; }
 
-  .digitalTransformation ul { flex-direction: column; }
+  .digitalTransformation ul, 
+  .contact-info-one,
+  .footerBottom { flex-direction: column; }
 
   .digitalTransformation li:first-child { 
     width:100%;
@@ -609,4 +666,52 @@ footer a, .footerBottom p, .footernav li:last-child {
 
   .digitalTransformation a { width: 100%; }
 
+  .products li { flex-wrap:wrap; }
+
+  .products li div {
+    width: 85%;
+    margin-bottom: 18px;
+  }
+
+  .products figure:last-of-type {
+    width: auto;
+    margin-left: 15%;
+  }
+
+  .products li p, .Resources p { width: 100%; }
+
+  .Resources li div, .Resources figure { 
+    width:100%;
+    display: block; 
+  }
+  .Resources li div{ margin-bottom: 18px; }
+
+  .contact-info { background: linear-gradient(to bottom, #3972d6 50%, #152250 50%); }
+
+  .contact-info-one li {
+    display: block;
+    margin: 0px auto;
+  }
+
+  .contact-info-one li:last-child { 
+    padding-top: 110px; 
+    margin: 0 auto;
+  }
+
+  .footerTop div { width: 45%; }
+
+  .footernav { width: 100%; }
+
+  .footernav li {
+    width: 48%;
+    margin-bottom: 7px;
+    float: left;
+  }
+
+}
+
+/*media query for 540px starts here*/
+@media only screen and (max-width: 540px) {
+
+  .footerTop div, .footernav li { width: 100%; }
 }
