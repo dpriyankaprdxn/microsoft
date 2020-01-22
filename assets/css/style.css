@@ -249,8 +249,6 @@ p {
   background-color: #020001;
 }
 
-.contact li:first-child { margin-right: 6%; }
-
 .contact li:first-child:before {
   font-family: FontAwesome;
   content: "\f095";
@@ -262,7 +260,7 @@ p {
   font-family: FontAwesome;
   content: '\f003';
   color: #fff;
-  }
+}
 
 .contact a { color: #fff; }
 
@@ -417,7 +415,7 @@ p {
 .Resources p , .Resources h4{ width: 70%; }
 
 .allBlog a { 
-  padding: 14px 2%;
+  padding: 15px 2%;
   border:1px solid transparent;
   margin: 74px auto 0;
   background: #3062b9; 
@@ -626,8 +624,6 @@ footer a, .footerBottom p, .footernav li:last-child {
 
   .icons { right: 65px; }
 
-  .digital-business a { width: 35%; }
-
   .Resources p, .Resources h4 { width: 85%; }
 
   .footerTop { flex-wrap: wrap; } 
@@ -644,7 +640,16 @@ footer a, .footerBottom p, .footernav li:last-child {
 /*media query for 767px starts here*/
 @media only screen and (max-width: 767px) {
 
+  .digital-business {  width: 60%; }
+
+  .banner { padding-bottom: 550px; }
+
   .wrapper { width:85%; }
+
+  .contact li {
+    margin-bottom: 5px;
+    display: block;
+  }
 
   .digitalTransformation ul, 
   .contact-info-one,
@@ -712,4 +717,19 @@ footer a, .footerBottom p, .footernav li:last-child {
 @media only screen and (max-width: 540px) {
 
   .footerTop div, .footernav li { width: 100%; }
+
+  .digital-business { 
+    width: 75%; 
+    top: 140px;
+  }
+
+  h2 { font-size: 20px; }
+
+  .digital-business p { font-size: 16px; }
+
+  .contact { top: 47px; }
+  
+  .digital-business a:before { font-size: 20px; }
+
+
 }
