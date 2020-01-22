@@ -227,7 +227,10 @@ p {
 .banner { 
   padding-bottom: 496px;
   position: relative;
-  background: linear-gradient(to right, #26348c , #26348c , #46446e , #883a48);
+  background: url('https://via.placeholder.com/1284x500.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;  background: linear-gradient(to right, #26348c , #26348c , #46446e , #883a48);
   color: #fff;
 }
 
@@ -239,7 +242,6 @@ p {
 .banner .wrapper + span { position: absolute; }
 
 .contact {
-  width: 25%;
   padding: 13px 2%;
   position: absolute;
   top: 0;
@@ -624,8 +626,6 @@ footer a, .footerBottom p, .footernav li:last-child {
 
   .icons { right: 65px; }
 
-  .contact { width: 35%; }
-
   .digital-business a { width: 35%; }
 
   .Resources p, .Resources h4 { width: 85%; }
@@ -643,8 +643,6 @@ footer a, .footerBottom p, .footernav li:last-child {
 
 /*media query for 767px starts here*/
 @media only screen and (max-width: 767px) {
-
-  .contact { width: 41%; }
 
   .wrapper { width:85%; }
 
